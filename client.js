@@ -1,6 +1,7 @@
 const ShareDB = require('@teamwork/sharedb/lib/client');
 const HtmlTextCollabExt = require('@convergence/html-text-collab-ext');
 const StringBinding = require('sharedb-string-binding');
+const { hcl } = require('d3-color');
 
 // Use the json0 fork that implements presence.
 const json0 = require('@datavis-tech/ot-json0');
@@ -14,8 +15,10 @@ const connection = new ShareDB.Connection(socket);
 // Sample user names for local testing.
 const names = ['Peter', 'Anna', 'John', 'Ole', 'Niels'];
 
-// Colors for names
-const colors = ['red', 'blue', 'green', 'purple', 'orange'];
+// Colors for names.
+const colors = names.map((name, i) =>
+  hcl((i / (names.length - 1)) * 360, 90, 40)
+);
 
 // Returns a color for a user name.
 const uidColor = uid => colors[names.findIndex(x => x === uid)];
@@ -25,7 +28,7 @@ const renderNameplate = uid => {
   const nameplate = document.getElementById('nameplate');
   nameplate.style = 'background-color: ' + uidColor(uid) + ';';
   nameplate.innerText = uid;
-}
+};
 
 const textarea = document.getElementById('example');
 
