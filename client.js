@@ -17,7 +17,7 @@ const names = ['Peter', 'Anna', 'John', 'Ole', 'Niels'];
 
 // Colors for names.
 const colors = names.map((name, i) =>
-  hcl((i / (names.length - 1)) * 360, 90, 40)
+  hcl((i / (names.length - 1)) * 360, 90, 35)
 );
 
 // Returns a color for a user name.
