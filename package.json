@@ -1,0 +1,32 @@
+{
+  "name": "json0-presence-demo",
+  "version": "0.0.1",
+  "description": "A demo of presence cursors with json0 and ShareDB.",
+  "main": "server.js",
+  "scripts": {
+    "build": "mkdir -p static/dist/ && ./node_modules/.bin/browserify client.js -o static/dist/bundle.js",
+    "watch": "./node_modules/.bin/watchify client.js -o static/dist/bundle.js -v",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Stian Håklev",
+  "contributors": [
+    "Curran Kelleher"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@convergence/html-text-collab-ext": "^0.1.1",
+    "@convergence/string-change-detector": "^0.1.8",
+    "@datavis-tech/ot-json0": "^1.2.0",
+    "@teamwork/sharedb": "^3.1.0",
+    "@teamwork/websocket-json-stream": "^2.0.0",
+    "express": "^4.16.4",
+    "sharedb-string-binding": "^1.0.0",
+    "textarea-caret": "^3.1.0",
+    "watchify": "^3.11.1",
+    "ws": "^6.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3"
+  }
+}
