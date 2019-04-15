@@ -1,6 +1,6 @@
 # json0-presence-demo
 
-A demo of plain text [presence](https://github.com/ottypes/docs/issues/29) using [ShareDB](https://github.com/Teamwork/sharedb) and [html-text-collab-ext](https://github.com/convergencelabs/html-text-collab-ext)).
+A demo of plain text [presence](https://github.com/ottypes/docs/issues/29) using [ShareDB](https://github.com/Teamwork/sharedb) and [html-text-collab-ext](https://github.com/convergencelabs/html-text-collab-ext).
 
 ![presence](https://user-images.githubusercontent.com/68416/56134824-ffac3400-5fac-11e9-89a1-c60064c3eb67.gif)
 
