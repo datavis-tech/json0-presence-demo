@@ -4,10 +4,8 @@ const ShareDB = require('@teamwork/sharedb');
 const WebSocket = require('ws');
 const WebSocketJSONStream = require('@teamwork/websocket-json-stream');
 
-// This fork implements presence.
+// Use the json0 fork that implements presence.
 const json0 = require('@datavis-tech/ot-json0');
-
-// Set the default type in ShareDB.
 ShareDB.types.register(json0.type);
 ShareDB.types.defaultType = json0.type;
 
