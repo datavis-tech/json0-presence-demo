@@ -6,7 +6,7 @@ A demo of presence cursors.
 
 ![selections](https://user-images.githubusercontent.com/68416/56134832-033fbb00-5fad-11e9-9274-a19b2287c5b1.gif)
 
-This application was originally authored by [Stian Håklev](https://github.com/houshuang) in [github.com/houshuang/presence-demo](https://github.com/houshuang/presence-demo). The original application was simplified down to a single `textarea` with presence by Curran Kelleher to provide a more minimal example to demonstrate that the [Presence work on json0](https://github.com/ottypes/json0/pull/31) functions within an integrated system.
+This application was originally authored by [Stian Håklev](https://github.com/houshuang) in [github.com/houshuang/presence-demo](https://github.com/houshuang/presence-demo). The original application was simplified by Curran Kelleher down to a single `textarea` with presence indicators (rendered using [onvergencelabs/html-text-collab-ext](https://github.com/convergencelabs/html-text-collab-ext)). The purpose of the simplified version is provide a more minimal example to demonstrate that the [Presence work on json0](https://github.com/ottypes/json0/pull/31) functions within an integrated system.
 
 To run locally:
 
