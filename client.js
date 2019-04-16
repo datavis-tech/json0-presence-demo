@@ -48,9 +48,6 @@ renderNameplate(uid);
 
 const collaborators = {};
 
-// This flag tells ShareDB to get presence data when we subscribe.
-doc.requestReplyPresence = true;
-
 doc.subscribe(function(err) {
   if (err) throw err;
 
