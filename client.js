@@ -15,10 +15,8 @@ const connection = new ShareDB.Connection(socket);
 // Sample user names for local testing.
 const names = ['Peter', 'Anna', 'John', 'Ole', 'Niels'];
 
-// Colors for names.
-const colors = names.map((name, i) =>
-  hcl((i / (names.length - 1)) * 360, 90, 35)
-);
+// Colors for names. Fixed chroma and lightness, varying hue.
+const colors = names.map((name, i) => hcl(i / names.length * 360, 90, 35));
 
 // Returns a color for a user name.
 const uidColor = uid => colors[names.findIndex(x => x === uid)];
