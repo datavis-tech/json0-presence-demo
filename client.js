@@ -112,7 +112,7 @@ function updateCursorText(range, uid, text) {
   if (range) {
     doc.submitPresence({
       p: [text],
-      t: 'rich-text',
+      t: 'text0',
       s: {
         u: uid,
         c: 0,
